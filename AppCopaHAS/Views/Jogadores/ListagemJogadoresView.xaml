@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppCopaHAS.Views.Jogadores.ListagemJogadorView"
-             Title="ListagemJogadorView">
+             x:Class="AppCopaHAS.Views.Jogadores.ListagemJogadoresView"
+             Title="ListagemJogadoresView">
     <ScrollView>
         <VerticalStackLayout Padding="10, 0, 0, 0">
             <CollectionView x:Name="listView" ItemsSource="{Binding Jogadores}" >
@@ -10,8 +10,8 @@
                     <DataTemplate>
                         <StackLayout Padding="10">
                             <Label Text="{Binding Nome}" FontSize="18" FontAttributes="Bold"/>
-                            <Label Text="{Binding NumeroCamisa}" FontSize="14" />       
-                        <Label Text="{Binding NumeroCamisa}" FontSize="14"/>
+                            <Label Text="{Binding NumeroCamisa}" FontSize="14" />
+                            <Label Text="{Binding NumeroCamisa}" FontSize="14"/>
                         </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

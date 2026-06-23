@@ -1,9 +1,22 @@
+using AppCopaHAS.ViewModels;
+
 namespace AppCopaHAS.Views.Jogadores;
 
 public partial class ListagemJogadorView : ContentPage
 {
-	public ListagemJogadorView()
+    ListagemJogadorViewModel viewModel;
+    public ListagemJogadorView()
 	{
 		InitializeComponent();
-	}
+
+        viewModel = new ListagemJogadorViewModel();
+        BindingContext = viewModel;
+        Title = "Listagem";
+
+    }
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        _ = viewModel.ObterJogadores();
+    }
 }

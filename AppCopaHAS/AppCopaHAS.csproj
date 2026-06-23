@@ -66,6 +66,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Views\Jogadores\ListagemJogadoresView.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Remove="Views\Jogadores\ListagemJogadoresView.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Azure.Storage.Blobs" Version="12.29.0" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
