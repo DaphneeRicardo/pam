@@ -1,9 +1,18 @@
+using AppCopaHAS.ViewModels;
+
 namespace AppCopaHAS.Views.Jogadores;
 
-public partial class CadastrJogadorView : ContentPage
+public partial class CadastroJogadorView : ContentPage
 {
-	public CadastrJogadorView()
+	CadastroJogadorViewModel viewModel;
+    public CadastroJogadorView()
 	{
-		InitializeComponent();
-	}
+        InitializeComponent();
+      
+        viewModel = new CadastroJogadorViewModel();
+        BindingContext = viewModel;
+        Title = "Cadastro";
+
+
+    }
 }

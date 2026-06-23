@@ -18,5 +18,5 @@
 
     <ShellContent Title="Jogadores" Route="jogadores"
         ContentTemplate="{DataTemplate jogadores:AlbumView}"/>
-    <ShellContent Title="Listagem" Route="tabela" ContentTemplate="{DataTemplate jogadores:ListagemJogadorVierw}"></ShellContent>
+    <ShellContent Title="Listagem" Route="tabela" ContentTemplate="{DataTemplate jogadores:ListagemJogadorView}"></ShellContent>
 </Shell>

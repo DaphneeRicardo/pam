@@ -76,7 +76,7 @@
 	  <MauiXaml Update="Views\Jogadores\AlbumView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Jogadores\ListagemJogadorVierw.xaml">
+	  <MauiXaml Update="Views\Jogadores\ListagemJogadorView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Jogos\CadastroJogoView.xaml">
